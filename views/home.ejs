@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <H1>Welcome!</H1>
+
+    <div style="background-color: lightblue; width: 628px; margin:58px; padding:20px; border-radius: 5px;">
+        <form action="http://localhost:2022/sentence" method="POST">
+            <h5>Add your sentence and its translation below:</h5>
+            <label for="textVal"></label>
+            <input type="text" placeholder="Add your sentence here." name="textVal" id="textVal">
+            <label for="translate"></label>
+            <input type="text" placeholder="Translate here." name="translate" id="translate">
+            <button type="submit" id="submit" class="btn btn-primary btn-sm">Submit Form</button>
+        </form>
+    </div>
+
+
+    <div style="background-color:bisque; width: 628px; margin:58px; padding:20px; border-radius: 5px;">
+        <form action="http://localhost:2022/single" method="POST" enctype="multipart/form-data">
+            <h5>Upload files (.xls and .xlsx) using the buttons below:</h5>
+            <label for="upload"></label>
+            <input type="file" id="excelUpload" name="fileUpload"
+                accept="application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+            <button type="submit" id="upload" class="btn btn-success btn-sm">Upload</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

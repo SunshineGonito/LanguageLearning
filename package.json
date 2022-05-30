@@ -1,0 +1,21 @@
+{
+  "name": "documentupload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "env-cmd nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.7",
+    "env-cmd": "^10.1.0",
+    "express": "^4.18.1",
+    "multer": "^1.4.4",
+    "pg": "^8.7.3",
+    "pg-format": "^1.0.4"
+  }
+}
